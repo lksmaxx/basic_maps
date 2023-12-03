@@ -11,3 +11,5 @@ add_subdirectory(vendor)
 file(GLOB_RECURSE SOURCE_FILES "src/*.cpp")
 
 add_executable(${EXEC_NAME} ${SOURCE_FILES})
+
+target_link_libraries(${EXEC_NAME} glfw)
