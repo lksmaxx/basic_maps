@@ -1,8 +1,13 @@
 [
 {
   "directory": "/home/lksmaxx/projects/cpp/opengl/basic_map/build",
-  "command": "/usr/bin/c++  -I/home/lksmaxx/projects/cpp/opengl/basic_map/vendor/glfw-3.3.8/include -std=gnu++20 -o CMakeFiles/maps.dir/src/main.cpp.o -c /home/lksmaxx/projects/cpp/opengl/basic_map/src/main.cpp",
+  "command": "/usr/bin/c++  -I/home/lksmaxx/projects/cpp/opengl/basic_map/vendor/glfw-3.3.8/include -I/home/lksmaxx/projects/cpp/opengl/basic_map/vendor/glad/include -std=gnu++20 -o CMakeFiles/maps.dir/src/main.cpp.o -c /home/lksmaxx/projects/cpp/opengl/basic_map/src/main.cpp",
   "file": "/home/lksmaxx/projects/cpp/opengl/basic_map/src/main.cpp"
+},
+{
+  "directory": "/home/lksmaxx/projects/cpp/opengl/basic_map/build/vendor",
+  "command": "/usr/bin/cc  -I/home/lksmaxx/projects/cpp/opengl/basic_map/vendor/glad/include  -o CMakeFiles/glad.dir/glad/src/gl.c.o -c /home/lksmaxx/projects/cpp/opengl/basic_map/vendor/glad/src/gl.c",
+  "file": "/home/lksmaxx/projects/cpp/opengl/basic_map/vendor/glad/src/gl.c"
 },
 {
   "directory": "/home/lksmaxx/projects/cpp/opengl/basic_map/build/vendor/glfw-3.3.8/src",
