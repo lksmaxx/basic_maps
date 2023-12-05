@@ -3,6 +3,8 @@
 #include <iosfwd>
 #include <iostream>
 
+namespace Utils {
+
 bool FileManager::readFile(const std::string &file_path, std::string &content) {
   if (file_path.length() == 0) {
     std::cerr << "ERROR::IO::FILE::EMPTY_PATH\n";
@@ -50,3 +52,4 @@ bool FileManager::writeFile(const std::string &file_path,
 
   return true;
 }
+} // namespace Utils

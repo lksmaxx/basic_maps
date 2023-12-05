@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/lksmaxx/projects/cpp/opengl/basic_map/build",
+  "command": "/usr/bin/c++  -I/home/lksmaxx/projects/cpp/opengl/basic_map/include -I/home/lksmaxx/projects/cpp/opengl/basic_map/vendor/glfw-3.3.8/include -I/home/lksmaxx/projects/cpp/opengl/basic_map/vendor/glad/include -g -std=gnu++20 -o CMakeFiles/maps.dir/src/shader/shader.cpp.o -c /home/lksmaxx/projects/cpp/opengl/basic_map/src/shader/shader.cpp",
+  "file": "/home/lksmaxx/projects/cpp/opengl/basic_map/src/shader/shader.cpp"
+},
+{
+  "directory": "/home/lksmaxx/projects/cpp/opengl/basic_map/build",
   "command": "/usr/bin/c++  -I/home/lksmaxx/projects/cpp/opengl/basic_map/include -I/home/lksmaxx/projects/cpp/opengl/basic_map/vendor/glfw-3.3.8/include -I/home/lksmaxx/projects/cpp/opengl/basic_map/vendor/glad/include -g -std=gnu++20 -o CMakeFiles/maps.dir/src/window/window.cpp.o -c /home/lksmaxx/projects/cpp/opengl/basic_map/src/window/window.cpp",
   "file": "/home/lksmaxx/projects/cpp/opengl/basic_map/src/window/window.cpp"
 },
