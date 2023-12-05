@@ -16,3 +16,6 @@ add_executable(${EXEC_NAME} ${SOURCE_FILES})
 target_link_libraries(${EXEC_NAME} glfw glad)
 
 target_include_directories(${EXEC_NAME} PRIVATE include)
+
+file(REMOVE_RECURSE ${CAMKE_BINARY_DIR}/res)
+file(COPY ${CMAKE_SOURCE_DIR}/res DESTINATION ${CMAKE_BINARY_DIR})
