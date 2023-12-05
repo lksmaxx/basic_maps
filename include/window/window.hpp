@@ -11,6 +11,8 @@ public:
   ~Window();
   bool eventLoop();
   procAdress getProcAddress() const;
+  int getWindowH() const;
+  int getWindowW() const;
 
 private:
   GLFWwindow *m_window;

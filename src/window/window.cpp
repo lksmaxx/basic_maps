@@ -5,6 +5,10 @@
 #include <string>
 
 namespace Engine {
+
+void framebuffer_size_callback(GLFWwindow *window, int width, int heigh) {
+  glViewport(0, 0, width, heigh);
+}
 Window::Window(unsigned int window_w, unsigned int window_h,
                const std::string &name) {
 
@@ -23,6 +27,8 @@ Window::Window(unsigned int window_w, unsigned int window_h,
   }
 
   glfwMakeContextCurrent(m_window);
+
+  glfwSetFramebufferSizeCallback(m_window, framebuffer_size_callback);
 }
 Window::~Window() {
   glfwDestroyWindow(m_window);
@@ -39,5 +45,8 @@ bool Window::eventLoop() {
 procAdress Window::getProcAddress() const {
   return reinterpret_cast<procAdress>(glfwGetProcAddress);
 }
+
+int Window::getWindowH() const { return m_window_h; }
+int Window::getWindowW() const { return m_window_w; }
 
 } // namespace Engine
