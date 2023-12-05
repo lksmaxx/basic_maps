@@ -1,4 +1,3 @@
-#include <iostream>
 #include <glad/gl.h>
 #include <GLFW/glfw3.h>
 #include <window/window.hpp>
@@ -24,7 +23,6 @@ Window::Window(unsigned int window_w, unsigned int window_h,
   }
 
   glfwMakeContextCurrent(m_window);
-  std::cout << "created window\n";
 }
 Window::~Window() {
   glfwDestroyWindow(m_window);
@@ -37,4 +35,9 @@ bool Window::eventLoop() {
 
   return !glfwWindowShouldClose(m_window);
 }
+
+procAdress Window::getProcAddress() const {
+  return reinterpret_cast<procAdress>(glfwGetProcAddress);
+}
+
 } // namespace Engine

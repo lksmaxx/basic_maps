@@ -4,11 +4,13 @@
 #include <string>
 
 namespace Engine {
+using procAdress = void(*(*)(const char *));
 class Window {
 public:
   Window(unsigned int window_w, unsigned int window_h, const std::string &name);
   ~Window();
   bool eventLoop();
+  procAdress getProcAddress() const;
 
 private:
   GLFWwindow *m_window;
