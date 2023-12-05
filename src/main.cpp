@@ -9,12 +9,10 @@ const int WINDOW_H = 720;
 
 int main() {
   try {
-    std::cout << "Alou\n";
 
-    MySpace::Window window(1280, 720, "My Maps");
+    Engine::Window window(1280, 720, "My Maps");
 
     while (window.eventLoop()) {
-      std::cout << "oi oi\n";
     }
   } catch (std::runtime_error err) {
     std::cerr << err.what();

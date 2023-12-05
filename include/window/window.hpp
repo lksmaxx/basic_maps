@@ -3,7 +3,7 @@
 #include <GLFW/glfw3.h>
 #include <string>
 
-namespace MySpace {
+namespace Engine {
 class Window {
 public:
   Window(unsigned int window_w, unsigned int window_h, const std::string &name);
@@ -16,4 +16,4 @@ private:
   unsigned int m_window_h;
   std::string m_window_name;
 };
-} // namespace MySpace
+} // namespace Engine

@@ -5,7 +5,7 @@
 #include <stdexcept>
 #include <string>
 
-namespace MySpace {
+namespace Engine {
 Window::Window(unsigned int window_w, unsigned int window_h,
                const std::string &name) {
 
@@ -37,4 +37,4 @@ bool Window::eventLoop() {
 
   return !glfwWindowShouldClose(m_window);
 }
-} // namespace MySpace
+} // namespace Engine
