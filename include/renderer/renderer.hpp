@@ -23,7 +23,7 @@ public:
   void bindVertexBuffer(const int vbo) const;
   void bufferArrayStaticData(size_t data_size, const void *data) const;
   void vertexAttribPointer(size_t index, size_t offset, DATA_TYPES type,
-                           size_t size, void *start);
+                           size_t stride, void *start);
 
   // draw
   void drawStaticTriangles(size_t offset, size_t count);
